@@ -1,0 +1,22 @@
+{
+  "name": "b.-landing-one-page-startup-fintech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "prod": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.17",
+    "preline": "^3.0.1",
+    "tailwindcss": "^4.0.17"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "mini-css-extract-plugin": "^2.9.2"
+  }
+}

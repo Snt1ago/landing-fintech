@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+/* Preline UI */
+@import "../node_modules/preline/variants.css";
+
+/* Plugins */
+@plugin "@tailwindcss/forms";
+/* Adds pointer cursor to buttons */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Defaults hover styles on all devices */
+@custom-variant hover (&:hover);
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+  --font-opensans: Open Sans, sans-serif;
+
+  /* primario---------------------------------- */
+  --color-green-haze-50: #f0f9f3;
+  --color-green-haze-100: #daf1e0;
+  --color-green-haze-200: #b7e3c6;
+  --color-green-haze-300: #88cda4;
+  --color-green-haze-400: #56b17e;
+  --color-green-haze-500: #38a169;
+  --color-green-haze-600: #24774c;
+  --color-green-haze-700: #1d5f3f;
+  --color-green-haze-800: #194c34;
+  --color-green-haze-900: #153f2c;
+  --color-green-haze-950: #0b2318;
+  /* ------------------------------------ */
+
+  /*secundario-------------------------- */
+  --color-pelorous-50: #ecfeff;
+  --color-pelorous-100: #d0f8fd;
+  --color-pelorous-200: #a7f0fa;
+  --color-pelorous-300: #6be3f5;
+  --color-pelorous-400: #27cde9;
+  --color-pelorous-500: #0bb0cf;
+  --color-pelorous-600: #0c8cae;
+  --color-pelorous-700: #11708d;
+  --color-pelorous-800: #175c73;
+  --color-pelorous-900: #184c61;
+  --color-pelorous-950: #093143;
+  /*-------------------------------------- */
+
+  /* acento---------------------------------- */
+  --color-brandy-rose-50: #faf6f6;
+  --color-brandy-rose-100: #f5eceb;
+  --color-brandy-rose-200: #eddddb;
+  --color-brandy-rose-300: #dfc5c2;
+  --color-brandy-rose-400: #cca19d;
+  --color-brandy-rose-500: #be8e89;
+  --color-brandy-rose-600: #a06862;
+  --color-brandy-rose-700: #855550;
+  --color-brandy-rose-800: #704844;
+  --color-brandy-rose-900: #5f403d;
+  --color-brandy-rose-950: #321f1d;
+  /* ------------------------------------------ */
+
+  /*neutros-------------------------- */
+  --color-white-50: #ffffff;
+  --color-white-100: #efefef;
+  --color-white-200: #dcdcdc;
+  --color-white-300: #bdbdbd;
+  --color-white-400: #989898;
+  --color-white-500: #7c7c7c;
+  --color-white-600: #656565;
+  --color-white-700: #525252;
+  --color-white-800: #464646;
+  --color-white-900: #3d3d3d;
+  --color-white-950: #292929;
+  /*--------------------------------- */
+}
