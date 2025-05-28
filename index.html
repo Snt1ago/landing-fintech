@@ -9,11 +9,35 @@
     />
     <meta
       name="keywords"
-      content="PayFlow, pagos y finanzas, transforma, gestionar, optimizar procesos"
+      content="PayFlow, startup fintech, emprendedores, empresas, pagos y finanzas, transforma, gestionar, optimizar procesos"
     />
+    <!-- Cambiar rutas relativas a rutas absolutas o relativas al proyecto -->
+    <!-- output.css -->
+    <link href="src/output.css" rel="stylesheet" />
     <meta name="author" content="PayFlow" />
     <title>PayFlow - Soluciones financieras</title>
-    <link href="src/output.css" rel="stylesheet" />
+    <!-- En el <head> de la versión en español -->
+    <link rel="alternate" hreflang="es" href="https://startupx.com/es" />
+    <!-- Versión en inglés -->
+    <link rel="alternate" hreflang="en" href="https://startupx.com/en" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "StartupX",
+        "url": "https://startupx.com",
+        "image": "url-logo.png",
+        "telephone": "+52-55-1234-5678",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Reforma 123",
+          "addressLocality": "Ciudad de México",
+          "addressRegion": "CDMX",
+          "postalCode": "06600"
+        },
+        "priceRange": "$$"
+      }
+    </script>
   </head>
   <body class="flex flex-col items-center md:px-[32px] px-[20px]">
     <!-- ========== HEADER ========== -->
@@ -235,36 +259,45 @@
             podemos ayudarte a optimizar tus procesos.
           </p>
 
-          <div class="mt-5 lg:mt-8 flex flex-col gap-2 sm:flex-row sm:gap-3">
-            <div class="sm:max-w-sm space-y-3">
-              <input
-                type="text"
-                class="py-2.5 sm:py-3 px-5 block w-full min-w-80 border-brandy-rose-200 rounded-full sm:text-sm focus:border-brandy-rose-500 focus:ring-brandy-rose-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                placeholder="Ingresa tu Email"
-              />
-            </div>
-            <button
-              type="button"
-              class="font-opensans py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-green-haze-500 text-white-50 hover:bg-green-haze-600 focus:outline-hidden focus:bg-green-haze-700 disabled:opacity-50 disabled:pointer-events-none"
-            >
-              Comienza ahora
-              <svg
-                class="shrink-0 size-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+          <form name="subscribe" netlify>
+            <div class="mt-5 lg:mt-8 flex flex-col gap-2 sm:flex-row sm:gap-3">
+              <div class="sm:max-w-sm space-y-3">
+                <label for="email" class="sr-only">Suscribete</label>
+                <input
+                  type="email"
+                  name="email"
+class="py-2.5 sm:py-3 px-5 block w-full min-w-80 border-brandy-rose-200 rounded-full sm:text-sm focus:border-brandy-rose-500 focus:ring-brandy-rose-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"                  
+placeholder="Inresa tu email"
+                />
+              </div>
+              <script src="https://www.google.com/recaptcha/api.js"></script>
+
+              <button
+              href="#"
+                    data-sitekey="6LcMLUorAAAAAHsFFn9cRn--BjNUH7YsGVHwiZpg"
+                    data-callback="onSubmit"
+                    data-action="submit"
+                class="g-recaptcha transition hover:scale-105 duration-300 font-opensans py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-green-haze-500 text-white-50 hover:bg-green-haze-600 focus:outline-hidden focus:bg-green-haze-700 disabled:opacity-50 disabled:pointer-events-none"
               >
-                <path d="M5 12h14"></path>
-                <path d="m12 5 7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
+                Comienza ahora
+                <svg
+                  class="shrink-0 size-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
 
           <!-- Brands -->
           <div class="flex flex-col mt-6 lg:mt-12">
@@ -362,7 +395,7 @@
             height="400"
             loading="lazy"
             decoding="async"
-            alt=""
+            alt="Dashboard de PayFlow para gestión de proyectos"
             srcset=""
           />
         </div>
@@ -381,11 +414,12 @@
         <div>
           <img
             src="src/img/Vision statement-rafiki 1.svg"
+            class="w-full"
             width="600"
             height="400"
             loading="lazy"
             decoding="async"
-            alt=""
+            alt="Dashboard de PayFlow para gestión de proyectos"
             srcset=""
           />
         </div>
@@ -610,11 +644,12 @@
         <div>
           <img
             src="src/img/Efficiency-bro (2) 1.svg"
+            class="w-full"
             width="600"
             height="400"
             loading="lazy"
             decoding="async"
-            alt=""
+            alt="Dashboard de PayFlow para gestión de proyectos"
             srcset=""
           />
         </div>
@@ -773,11 +808,12 @@
             <div class="aspect-w-16 aspect-h-11">
               <img
                 src="src/img/Sign up-amico (1) 1.svg"
+                class="w-full"
                 width="600"
                 height="400"
                 loading="lazy"
                 decoding="async"
-                alt=""
+                alt="Dashboard de PayFlow para gestión de proyectos"
                 srcset=""
               />
             </div>
@@ -804,11 +840,12 @@
             <div class="aspect-w-16 aspect-h-11">
               <img
                 src="src/img/Account-rafiki (1) 1.svg"
+                class="w-full"
                 width="600"
                 height="400"
                 loading="lazy"
                 decoding="async"
-                alt=""
+                alt="Dashboard de PayFlow para gestión de proyectos"
                 srcset=""
               />
             </div>
@@ -835,11 +872,12 @@
             <div class="aspect-w-16 aspect-h-11">
               <img
                 src="src/img/Payment Information-bro (1) 1.svg"
+                class="w-full"
                 width="600"
                 height="400"
                 loading="lazy"
                 decoding="async"
-                alt=""
+                alt="Dashboard de PayFlow para gestión de proyectos"
                 srcset=""
               />
             </div>
@@ -1195,11 +1233,12 @@
           <div class="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden">
             <img
               src="src/img/Contact us-cuate (1) 1.svg"
+              class="w-full"
               width="600"
               height="400"
               loading="lazy"
               decoding="async"
-              alt=""
+              alt="Dashboard de PayFlow para gestión de proyectos"
               srcset=""
             />
           </div>
